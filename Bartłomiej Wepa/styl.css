@@ -1,0 +1,63 @@
+* {
+    font-family: Garamond;
+    color: white;
+}
+
+body {
+    margin: 0 auto;
+}
+
+header {
+    background-color: Indigo;
+    text-align: center;
+    padding: 2px;
+}
+
+#left {
+    background-color: Indigo;
+    height: 600px;
+    width: 20%;
+    float: left;
+}
+
+#middle {
+    background-color: black;
+    height: 600px;
+    overflow: scroll;
+    width: 60%;
+    float: inline-start;
+}
+
+#right {
+    width: 20%;
+    float: right;
+    background-color: indigo;
+    height: 600px;
+}
+
+footer {
+    clear: both;
+    background-color: Indigo;
+    height: 150px;
+}
+
+li {
+    padding: 5px;
+}
+
+input {
+    margin: 10px;
+    color: indigo;
+}
+
+span {
+    background-color: Tomato;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+div {
+    text-align: center;
+    padding: 3px;
+    float: left;
+}

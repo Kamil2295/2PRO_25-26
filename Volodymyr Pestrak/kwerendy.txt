@@ -1,0 +1,7 @@
+SELECT id, nazwa, zdjecie FROM gry;
+
+SELECT nazwa, substr(opis, 1, 100), punkty, cena FROM gry WHERE id=1;
+
+SELECT nazwa, punkty FROM gry ORDER BY punkty desc limit 5;
+
+INSERT INTO gry (nazwa, opis, punkty, cena, zdjecie) values ('Zamczysko', 'Na odludziu stoi opuszczone zamczysko, w którym znajduje się skarb strzeżony przez złowrogie demony i duchy', '200', '50', 'zamczysko.jpg');

@@ -1,0 +1,4 @@
+1. select id, nazwa, zdjecie from gry;
+2. select nazwa, left(opis, 100), punkty, cena from gry where id = 1;
+3. select nazwa, punkty from gry order by punkty desc limit 5;
+4. insert into gry(nazwa, opis, punkty, cena, zdjecie) values ("Zamczysko", "Na odludziu stoi opuszczone zamczysko, w którym znajduje się skarb strzeżony przez złowrogie demony i duchy", 200, 50, "zamczysko.jpg");

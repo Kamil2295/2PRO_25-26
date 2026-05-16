@@ -1,0 +1,4 @@
+kw1 - SELECT id, nazwa, zdjecie FROM gry;
+kw2 - SELECT nazwa, opis, punkty, cena FROM gry where id = 1;
+kw3 - SELECT nazwa, punkty FROM gry ORDER BY punkty DESC LIMIT 5;
+kw4 - INSERT INTO gry(nazwa, opis, punkty, cena, zdjecie) VALUES ('Zamczysko', 'Na odludziu stoi opuszczone zamczysko, w kt rym znajduje si  skarb strze ony przez z owrogie demony i duchy ', '200', '50', 'zamczysko.jpg');

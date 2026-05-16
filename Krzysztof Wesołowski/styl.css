@@ -1,0 +1,48 @@
+* {
+    font-family: Garamond;
+    color: white;
+}
+header {
+    background-color: indigo;
+    text-align: center;
+    padding: 2px;
+}
+aside {
+    background-color: indigo;
+    height: 600px;
+    width: 20%;
+}
+main {
+    display: flex;
+    flex-direction: row;
+}
+figure {
+    background-color: black;
+    height: 600px;
+    overflow: scroll;
+    width: 60%;
+    margin: 0%;
+    display: flex;
+}
+@media screen {
+    
+}
+footer {
+    background-color: indigo;
+    height: 150px;
+}
+li {
+    padding: 5px;
+}
+input[type="text"] {
+    margin: 10px;
+    color: indigo;
+}
+input[type="submit"] {
+    color: black;
+}
+.punkty {
+    background-color: tomato;
+    border-radius: 50%;
+    padding: 5px;
+}

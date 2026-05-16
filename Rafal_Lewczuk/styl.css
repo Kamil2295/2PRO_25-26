@@ -1,0 +1,61 @@
+*{
+    font-family: Garamond;
+    color: white;
+    
+}
+header{
+    background-color: indigo;
+    text-align: center;
+    padding: 2px;
+}
+#lewy, #prawy{
+    background-color: indigo;
+    height: 600px;
+    width: 20%;
+}
+#srodek{
+    background-color: black;
+    height: 600px;
+    overflow: auto;
+}
+footer{
+    background-color: indigo;
+    height: 150px;
+}
+
+.list_punktow{
+    background-color: tomato;
+    border-radius:  50%;
+    padding: 5px;
+}
+li{
+    padding: 5px;
+}
+#lewy{
+    float: left;
+}
+#srodek{
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+}
+#prawy{
+    float: right;
+}
+footer{
+    clear: both;
+}
+.blokimg{
+    text-align: center;
+    padding: 3px;
+}
+input{
+    margin: 10px;
+    color: black;
+}
+@media screen and (min-width: 800px){
+#center, #left, #right{
+    width: 60%;
+}
+}

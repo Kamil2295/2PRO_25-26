@@ -1,0 +1,60 @@
+*{
+    font-family: 'Garamond';
+    color: white;
+}
+body{
+    margin: 0;
+}
+header{
+    background-color: indigo;
+    text-align: center;
+    padding: 2px;
+}
+#lewa,
+#prawa{
+    background-color: indigo;
+    height: 600px;
+}
+
+#srodek{
+    background-color: black;
+    height: 600px;
+    overflow: scroll;
+}
+@media screen{
+    #lewy{
+        width: 20%;
+        float: left;
+    }
+    #srodek{
+        width: 60%;
+        float: left;
+    }
+    #prawy{
+        width: 20%;
+        float: left;
+    }
+}
+footer{
+    background-color: indigo;
+    height: 150px;
+    clear: both;
+}
+span{
+    background-color: tomato;
+    border-radius: 50%;
+    padding: 5px;
+}
+li{
+    padding: 5px;
+}
+.gra{
+    display: inline-block;
+    text-align: center;
+    padding: 3px;
+}
+input{
+    margin: 10px;
+    color: indigo;
+}
+
