@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylizacja paznokci</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+        <section id="blok">
+            <img src="manicure.jpg" alt="Stylizacja
+            paznokc">
+        </section>
+    <header>
+        <h1>Twoje wymarzone paznokcie</h1>
+        <nav>
+            <button id="przy1" onclick="kolor()">Kolor</button>
+            <button id="przy2" onclick="ksztalt()">Kształ</button>
+            <button id="przy3" onclick="wzor()">Wzór</button>
+        </nav>
+    </header>
+
+
+
+    <main>
+        
+        <section id="jeden">
+            <h2>Kolor</h2>
+            <input type="color" value="FF0000">
+            <script src="kolor.js"></script>
+        </section>
+
+
+        <section id="dwa">
+            <h2>Kształt</h2>
+            <img src="ksztalt.png" alt="Kształty paznokci">
+            <ul>
+                <li>migdał</li>
+                <li>zaokrąglony</li>
+                <li>kwadratowy</li>
+                <li>balerina</li>
+                <li>zaokrąglony kwadrat</li>
+            </ul>
+            <script src="kolor.js"></script>
+
+        </section>
+        <section id="trzy">
+            <h2>Wzór</h2>
+            <input type="number" min="1" max="10">
+            <script src="kolor.js"></script>
+
+
+        </section>
+    </main>
+    <footer>
+        <p>Autor strony: <i>17</i></p>
+    </footer>
+    
+</body>
+</html>

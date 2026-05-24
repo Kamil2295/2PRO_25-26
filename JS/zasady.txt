@@ -1,0 +1,37 @@
+ZASADY OCENIANIA ZADANIA INF.03-09-26.01-SG
+Punktacja: 1 pkt za każde kryterium [cite: 12]
+
+REZULTAT 1: OPERACJE NA BAZIE [cite: 12]
+R.1.1 Import tabel z pliku paznokcie.sql (widoczny na import.png)
+R.1.2 Plik kwerendy.txt zawiera min. jedno poprawne zapytanie
+R.1.3 Zapytanie 1: SELECT imie, kolor, cena FROM klienci WHERE topKlient = 1; (6 wierszy)
+R.1.4 Zapytanie 2: SELECT imie, cena FROM klienci WHERE termin LIKE "2024-05-23%"; (Uwaga: "=" jest błędem)
+R.1.5 Zapytanie 3: SELECT imie, kolor, ksztalt FROM klienci JOIN ksztalty ON klienci.ksztalty_id = ksztalty.id WHERE ksztalt = "migdał";
+R.1.6 Zapytanie 4: ALTER TABLE wzory ADD doplata INT;
+
+REZULTAT 2: ZAWARTOŚĆ WITRYNY [cite: 12]
+R.2.1 Grafika kolory.png skadrowana do butelek, wysokość 70px
+R.2.2 Deklaracja HTML5 i lang="pl"
+R.2.3 Kodowanie znaków i tytuł "Stylizacja paznokci"
+R.2.4 Podział semantyczny: aside, main, header, nav, section, footer
+R.2.5 Nagłówki H1, H2 oraz numer zdającego w stopce
+R.2.7 Trzy przyciski w bloku nawigacyjnym: "Kolor", "Kształt", "Wzór"
+R.2.9 Lista rozwijana (select/option) z 5 opcjami kształtów
+R.2.10 Numer zdającego sformatowany znacznikiem <em>
+
+REZULTAT 3 I 4: DZIAŁANIE I STYL CSS [cite: 12, 13]
+R.3.3 Zdarzenie onmouseover (lub pokrewne) uruchamia funkcję
+R.3.4 Input typu color z wartością #FF0000 (Sekcja 1)
+R.3.5 Input typu number z min=1 i max=10 (Sekcja 3)
+R.4.1 Czcionka "Trebuchet MS", sans-serif dla (*)
+R.4.2 Kolory tła: BlanchedAlmond (body), Salmon i Crimson (sekcje/przyciski)
+R.4.4 Szerokość: boczny 20%, główny 80%, przycisk 26%
+R.4.9 Wyświetlanie: Sekcja 1 display: block, pozostałe display: none
+R.4.10 Klasa .wzory: szerokość 70px, margin 5px, border-radius 100%
+
+REZULTAT 5: SKRYPT [cite: 14]
+R.5.2 Pętla wyświetlająca 10 obrazów 1.jpg - 10.jpg
+R.5.3 Obrazy mają klasę "wzory" i poprawny atrybut title (numer)
+R.5.4 Skrypt 2 używa metod DOM do zmiany stylu (backgroundColor / display)
+R.5.5-5.7 Poprawna logika przełączania zakładek (aktywna = Salmon + block)
+R.5.8 Nazwy zmiennych/funkcji są znaczące i w j. polskim lub angielskim

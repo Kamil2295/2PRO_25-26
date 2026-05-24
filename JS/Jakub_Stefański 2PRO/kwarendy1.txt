@@ -1,0 +1,8 @@
+kw1
+SELECT imie, kolor, cena FROM klienci WHERE topKlient = 1;
+kw2
+SELECT imie cena FROM klienci WHERE "2024-05-23";
+kw3
+SELECT klienci.imie, klienci.kolor FROM klienci join ksztalty on klienci.ksztalty_id= ksztalty.id WHERE ksztalty.ksztalt = "migdał";
+kw4
+ALTER TABLE `wzory` ADD `dopłata` INT(20) NOT NULL AFTER `wzor`;

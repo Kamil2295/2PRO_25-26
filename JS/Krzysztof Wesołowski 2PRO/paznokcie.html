@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylizacja paznokci</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+    <aside>
+        <img src="pliki15/manicure.jpg" alt="Stylizacja paznokci">
+    </aside>
+    <main>
+        <header>
+            <h1>Twoje wymarzone paznokcie</h1>
+        </header>
+        <nav>
+            <button id="p1" onmouseover="najedz_na(1)">Kolor</button>
+            <button id="p2" onmouseover="najedz_na(2)">Kształt</button>
+            <button id="p3" onmouseover="najedz_na(3)">Wzór</button>
+        </nav>
+        <section id="s1">
+            <h2>Kolor</h2>
+            <img src="pliki15/kolory.png" alt="Kolory paznokci"> <br>
+            <input type="color" name="kolor" id="kolor" value="#FF0000">
+        </section>
+        <section id="s2">
+            <h2>Kształt</h2>
+            <img src="pliki15/ksztalt.png" alt="Kształty paznokci">
+            <select>
+                <option>migdał</option>
+                <option>zaokrąglony</option>
+                <option>kwadratowy</option>
+                <option>balerina</option>
+                <option>zaogrąglony kwadrat</option>
+            </select>
+        </section>
+        <section id="s3">
+            <h2>Wzór</h2>
+            <script>
+                // Skrypt 1
+                const d = document.createElement('div');
+                d.id = "obrazy";
+                for (let i = 1; i <= 10; i++) {
+                    let nazwa = i + ".jpg";
+
+                    const obraz = document.createElement('img');
+                    obraz.className = "wzory";
+                    obraz.src = `pliki15/${nazwa}`;
+                    obraz.title = i;
+
+                    d.appendChild(obraz);
+                    console.log(i);
+                    console.log(nazwa);
+                    console.log("Uruchomiono");
+                }
+                document.getElementById('s3').appendChild(d);
+            </script>
+            <input type="number" min="1" max="10">
+        </section>
+    </main>
+    <footer>
+        <p>Autor strony: <i>21KW</i></p>
+    </footer>
+
+    <script>
+        // Skrypt 2
+        const s1 = document.getElementById('s1');
+        const s2 = document.getElementById('s2');
+        const s3 = document.getElementById('s3');
+
+        const p1 = document.getElementById('p1');
+        const p2 = document.getElementById('p2');
+        const p3 = document.getElementById('p3');
+
+        function najedz_na(przycisk) {
+            if (przycisk === 1) {
+                s1.style.visibility = "visible";
+                s1.style.display = "block";
+                s2.style.visibility = "hidden";
+                s3.style.visibility = "hidden";
+                p1.style.backgroundColor = "salmon";
+                p2.style.backgroundColor = "crimson";
+                p3.style.backgroundColor = "crimson";
+                s1.style.padding = "10px";
+                s1.style.height = "250px";
+                s1.style.marginLeft = "10%";
+                s2.style.padding = "0px";
+                s2.style.height = "0px";
+                s2.style.marginLeft = "0%";
+                s3.style.padding = "0px";
+                s3.style.height = "0px";
+                s3.style.marginLeft = "0%";
+            } else if (przycisk === 2) {
+                s1.style.visibility = "hidden";
+                s2.style.visibility = "visible";
+                s2.style.display = "block";
+                s3.style.visibility = "hidden";
+                p1.style.backgroundColor = "crimson";
+                p2.style.backgroundColor = "salmon";
+                p3.style.backgroundColor = "crimson";
+                s1.style.padding = "0px";
+                s1.style.height = "0px";
+                s1.style.marginLeft = "0%";
+                s2.style.padding = "10px";
+                s2.style.height = "250px";
+                s2.style.marginLeft = "10%";
+                s3.style.padding = "0px";
+                s3.style.height = "0px";
+                s3.style.marginLeft = "0%";
+            } else if (przycisk === 3) {
+                s1.style.visibility = "hidden";
+                s2.style.visibility = "hidden";
+                s3.style.visibility = "visible";
+                s3.style.display = "block";
+                p1.style.backgroundColor = "crimson";
+                p2.style.backgroundColor = "crimson";
+                p3.style.backgroundColor = "salmon";
+                s1.style.padding = "0px";
+                s1.style.height = "0px";
+                s1.style.marginLeft = "0%";
+                s2.style.padding = "0px";
+                s2.style.height = "0px";
+                s2.style.marginLeft = "0%";
+                s3.style.padding = "10px";
+                s3.style.height = "250px";
+                s3.style.marginLeft = "10%";
+            }       
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styl.css">
+    <title>Stylizacja paznokci</title>
+</head>
+<body>
+    <aside>
+        <img src="manicure.jpg" alt="Stylizacja paznokci">
+    </aside>
+
+    <main>
+        <header>
+            <h1>Twoje wymarzone paznokcie</h1>
+        </header>
+        <nav>
+            <button class="first" id="btnsekcja1">Kolor</button>
+            <button class="second" id="btnsekcja2">Kształt</button>
+            <button onclick="sekcja3()" class="second" id="btnsekcja3">Wzór</button>
+        </nav>
+        <section id="sekcja1" style="display: block;">
+            <h2>Kolor</h2>
+            <img src="kolory.png" alt="Kolory paznokci">
+            <br>
+            <input type="color" id="kolor" value="#FF0000">
+        </section>
+        <section id="sekcja2" style="display: none;">
+            <h2>Kształt</h2>
+            <img src="ksztalt.png" alt="Kształty paznokci">
+            <br>
+            <select id="">
+                <option>migdał</option>
+                <option>zaokrąglony</option>
+                <option>kwadratowy</option>
+                <option>balerina</option>
+                <option>zaokrąglony kwadrat</option>
+            </select>
+        </section>
+        <section id="sekcja3" style="display: none;">
+            <h2>Wzór</h2>
+            <script>
+                for(let i = 1; i <= 10 ;i++) {
+                var img = document.createElement("img")
+                img.setAttribute("src", i + ".jpg")
+                img.setAttribute("title", i)
+                img.classList.add("wzory")
+
+                sekcja3.appendChild(img)
+            }
+            </script>
+            <br>
+            <input type="number" min="1" max="10">
+        </section>
+    </main>
+
+    <footer>
+        <p>Autor strony: <i><b>Bartłomiej Wepa 2PRO</b></i></p>
+    </footer>
+
+    <script>
+        const btnsekcja1 = document.getElementById("btnsekcja1")
+        const btnsekcja2 = document.getElementById("btnsekcja2")
+        const btnsekcja3 = document.getElementById("btnsekcja3")
+
+        const sekcja1 = document.getElementById("sekcja1")
+        const sekcja2 = document.getElementById("sekcja2")
+        const sekcja3 = document.getElementById("sekcja3")
+
+        btnsekcja3.addEventListener("pointerenter", () => {
+            btnsekcja3.style.backgroundColor = "Salmon"
+            btnsekcja2.style.backgroundColor = "Crimson"
+            btnsekcja1.style.backgroundColor = "Crimson"
+
+            sekcja3.style.display = "block"
+            sekcja2.style.display = "none"
+            sekcja1.style.display = "none"
+        })
+
+        btnsekcja2.addEventListener("pointerenter", () => {
+            btnsekcja3.style.backgroundColor = "Crimson"
+            btnsekcja2.style.backgroundColor = "Salmon"
+            btnsekcja1.style.backgroundColor = "Crimson"
+
+            sekcja3.style.display = "none"
+            sekcja2.style.display = "block"
+            sekcja1.style.display = "none"
+        })
+
+        btnsekcja1.addEventListener("pointerenter", () => {
+            btnsekcja3.style.backgroundColor = "Crimson"
+            btnsekcja2.style.backgroundColor = "Crimson"
+            btnsekcja1.style.backgroundColor = "Salmon"
+
+            sekcja3.style.display = "none"
+            sekcja2.style.display = "none"
+            sekcja1.style.display = "block"
+        })
+    </script>
+</body>
+</html>

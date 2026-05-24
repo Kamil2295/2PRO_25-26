@@ -1,0 +1,30 @@
+body{
+    font-family: 'Trebuchet MS', 'sans-serif';
+    background-color: BlanchedAlmond;
+    text-align: center;
+}
+#blok{
+    width: 20%;
+    float: left;
+    
+
+}
+main{
+    
+    width: 80%;
+    background-color: Salmon;
+    height: 250;
+    padding: 10px;
+}
+main.nav{
+    text-align: left;
+    margin-left: 10%;
+
+}
+button{
+    width: 26%;
+    color: white;
+    border: none;
+    font-size: 200%;
+    font-family: crimson;    
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styl.css">
+    <title>Stylizacja paznokci</title>
+</head>
+<body>
+    <aside>
+        <img src="manicure.jpg" alt="Stylizacja paznokci">
+    </aside>
+    <main>
+        <header>
+            <h1>Twoje wymarzone paznokcie</h1>
+        </header>
+
+
+        <nav>
+            <button id="kolor" onclick="kolor()">Kolor</button>
+            <button id="ksztalt" onclick="ksztalt()">Kształt</button>
+            <button id="wzor" onclick="wzor()">Wzór</button>
+        </nav>
+
+
+        <section id="section1">
+            <h2>Kolor</h2>
+            <img src="kolory.png" alt="Kolory paznokci"><br>
+            <input type="color" name="kolor" id="kolor" value="#FF0000">
+        </section>
+
+
+        <section id="section2">
+            <h2>Kształt</h2>
+            <img src="ksztalt.png" alt="Kształty paznokci"><br>
+            <select name="ksztalt" id="ksztalt">
+                <option value="">migdał</option>
+                <option value="">zaokrąglony</option>
+                <option value="">kwadratowy</option>
+                <option value="">balerina</option>
+                <option value="">zaokrąglony kwadrat</option>
+            </select>
+        </section>
+
+
+        <section id="section3">
+            <h2>Wzór</h2>
+            <section id="img_section3"></section>
+            <input type="number" name="numery" id="numery" min="1" max="10">
+        </section>
+
+
+    </main>
+
+    <footer>
+        <p>Autor strony: <em>00000000000</em></p>
+    </footer>
+
+
+    <script>
+        function kolor(){
+            const kolor = document.getElementById("kolor")
+            const ksztalt = document.getElementById("ksztalt")
+            const wzor = document.getElementById("wzor")
+            const section1 = document.getElementById("section1")
+            const section2 = document.getElementById("section2")
+            const section3 = document.getElementById("section3")
+
+            kolor.style.backgroundColor="salmon"
+            ksztalt.style.backgroundColor="crimson"
+            wzor.style.backgroundColor="crimson"
+
+            section1.style.display="block"
+            section2.style.display="none"
+            section3.style.display="none"
+        }
+        function ksztalt(){
+            const kolor = document.getElementById("kolor")
+            const ksztalt = document.getElementById("ksztalt")
+            const wzor = document.getElementById("wzor")
+            const section1 = document.getElementById("section1")
+            const section2 = document.getElementById("section2")
+            const section3 = document.getElementById("section3")
+
+            kolor.style.backgroundColor="crimson"
+            ksztalt.style.backgroundColor="salmon"
+            wzor.style.backgroundColor="crimson"
+            
+            section1.style.display="none"
+            section2.style.display="block"
+            section3.style.display="none"
+        }
+        function wzor(){
+            const kolor = document.getElementById("kolor")
+            const ksztalt = document.getElementById("ksztalt")
+            const wzor = document.getElementById("wzor")
+            const section1 = document.getElementById("section1")
+            const section2 = document.getElementById("section2")
+            const section3 = document.getElementById("section3")
+
+            kolor.style.backgroundColor="crimson"
+            ksztalt.style.backgroundColor="crimson"
+            wzor.style.backgroundColor="salmon"
+
+            section1.style.display="none"
+            section2.style.display="none"
+            section3.style.display="block"
+        }
+
+        for(let i =1; i<=10; i++){
+            const img=document.createElement("img")
+            const img_section3=document.getElementById("img_section3")
+            img.setAttribute("class", "wzory")
+            img.setAttribute("src", `${i}.jpg`)
+            img.setAttribute("title", `${i}`)
+
+
+
+            img_section3.appendChild(img)
+            
+        }
+
+        
+    </script>
+</body>
+</html>

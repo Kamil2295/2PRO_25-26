@@ -1,0 +1,59 @@
+*{
+    font-family: Trebuchet MS,sans-serif;
+}
+body{
+    background-color: blanchedalmond;
+    text-align: center;
+  
+}
+#Ale{
+      display: flex;
+    flex-direction: row;
+}
+aside{
+    width: 20%;
+}
+
+#obrbocz{
+    width: 100%;
+}
+main{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+
+}
+nav{
+    text-align: left;
+    margin-left: 10%;
+
+}
+
+#s1,#s2,#s3{
+    background-color: salmon;
+    margin-left: 10%;
+    padding: 10px;
+    height: 250px;
+}
+#s1{
+    visibility: visible;
+}
+#s2,#s3{
+    visibility: hidden;
+}
+button:first-of-type{
+    background-color: salmon;
+}
+button{
+    width: 26%;
+    background-color: crimson;
+    color: white;
+    font-size: 200%;
+    border: 0px;
+}
+.wzory{
+    width: 70px;
+    margin: 5px;
+    border-radius: 100%;
+}
+

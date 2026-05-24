@@ -1,0 +1,37 @@
+ARKUSZ EGZAMINACYJNY INF.03-09-26.01-SG
+Tytuł: Salon stylizacji paznokci
+Rok: 2026
+
+1. OPERACJE NA BAZIE DANYCH
+- Nazwa bazy: paznokcie
+- Tabele: klienci, ksztalty, wzory
+- Kwerendy do wykonania:
+  1. Imię, kolor, cena dla topKlient = 1.
+  2. Imię i cena dla klientów z dnia 2024-05-23 (wymagany LIKE).
+  3. Imię, kolor i nazwa kształtu dla kształtu "migdał" (JOIN).
+  4. Dodanie kolumny 'doplata' (typ całkowity) do tabeli wzory.
+
+2. WITRYNA INTERNETOWA - STRUKTURA
+- Plik: paznokcie.html lub paznokcie.php
+- Standard: HTML5, język polski, kodowanie znaków
+- Tytuł: "Stylizacja paznokci"
+- Układ: Blok boczny (aside) oraz Blok główny (main) zawierający: header, nav, 3 sekcje i footer
+- Elementy:
+  * H1: "Twoje wymarzone paznokcie"
+  * H2 w sekcjach: "Kolor", "Kształt", "Wzór"
+  * Stopka: Numer zdającego w znaczniku <em>
+
+3. STYL CSS (styl.css)
+- Czcionka: "Trebuchet MS", sans-serif (dla wszystkich)
+- Kolory tła: 
+  * body: BlanchedAlmond
+  * sekcje i 1. przycisk: Salmon
+  * pozostałe przyciski: Crimson
+- Wymiary: Blok boczny 20%, Główny 80%, Sekcje wysokość 250px
+- Widoczność: Sekcja 1 widoczna (block), Sekcje 2 i 3 ukryte (none)
+
+4. SKRYPTY
+- Skrypt 1: Pętla generująca 10 obrazów (1.jpg do 10.jpg) z klasą "wzory" i atrybutem title
+- Skrypt 2: Obsługa najechania myszą (onmouseover) na przyciski menu
+  * Zmienia widoczność odpowiedniej sekcji (display: block/none)
+  * Zmienia kolory tła przycisków (Salmon dla aktywnego, Crimson dla reszty)

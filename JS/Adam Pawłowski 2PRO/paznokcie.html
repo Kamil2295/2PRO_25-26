@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styl.css">
+    <title>Stylizacja paznokci</title>
+</head>
+
+<body>
+    <section id="Ale">
+    <aside><img src="manicure.jpg" alt="Stylizacja paznokci"></aside>
+    
+    <main>
+        <header><h1>Twoje wymarzone paznokcie</h1></header>
+        <nav>
+            <button id="kolor" onmouseover="over('kolor')">Kolor</button>
+            <button id="ksztalt"onmouseover="over('ksztalt')">Kształt</button>
+            <button id="wzor"onmouseover="over('wzor')">Wzór</button>
+        
+        </nav>
+
+        <section id="s1">
+            <h2>Kolor</h2>
+            <img src="kolory.png" alt="Kolory paznokci"><br>
+            <input type="color" name="" id="" value="#FF0000"> 
+           
+        </section>
+        <section id="s2">
+            <h2>Kształt</h2>
+            <img src="ksztalt.png" alt="Kształt paznokci"><br>
+            <select name="" id="">
+                <option value="migdał">migdał</option>
+                <option value="zaokrąglony">zaokrąglony</option>
+                <option value="kwadratowy">kwadratowy</option>
+                <option value="balerina">balerina</option>
+                <option value="zaokrąglony kwadrat" >zaokrąglony kwadrat</option>
+            </select>
+        </section>
+        <section id="s3">
+            <h2>Wzór</h2>
+            <script>
+
+                
+                for(let i=1;i<=10;i++){
+                    let plik =".jpg"
+                    let s3=document.getElementById("s3")
+                    let img=document.createElement("img")
+                    console.log(i+plik)
+                    img.setAttribute("src",i+plik)
+                    img.setAttribute("title",i)
+                    img.setAttribute("class","wzory")
+                    s3.appendChild(img)
+                }
+                let nimg = document.getElementsByClassName("wzory")
+
+        function over(guzior) {
+        let s1=document.getElementById("s1")
+        let s2=document.getElementById("s2")
+        let s3=document.getElementById("s3")
+
+        let pr1=document.getElementById("kolor")
+        let pr2=document.getElementById("ksztalt")
+        let pr3=document.getElementById("wzor")
+
+
+       
+            switch (guzior) {
+                case "kolor":
+                    s1.style.setProperty("visibility","visible")
+                    s2.style.setProperty("visibility","hidden")
+                    s3.style.setProperty("visibility","hidden")
+                    pr1.style.setProperty("background-color","salmon")
+                    pr2.style.setProperty("background-color","crimson")
+                    s2.style.setProperty("height","0")
+                    s3.style.setProperty("height","0")
+                    s3.style.setProperty("width","0")
+                    s2.style.setProperty("width","0")
+
+                    s1.style.setProperty("width","954.72px")
+                    s1.style.setProperty("height","270px")
+                    console.log("kolor")
+
+ break;
+                case "ksztalt":
+                    s1.style.setProperty("visibility","hidden")
+                    s2.style.setProperty("visibility","visible")
+                    s3.style.setProperty("visibility","hidden")
+                    pr1.style.setProperty("background-color","crimson")
+                    pr3.style.setProperty("background-color","crimson")
+                    pr2.style.setProperty("background-color","salmon")
+                    s1.style.setProperty("height","0")
+                    s1.style.setProperty("width","0")
+                    s3.style.setProperty("height","0")
+                    s3.style.setProperty("width","0")
+
+                    s2.style.setProperty("width","954.72px")
+                    s2.style.setProperty("height","270px")
+                console.log("sz")
+                break;
+
+                
+                case "wzor":
+                    s1.style.setProperty("visibility","hidden")
+                    s2.style.setProperty("visibility","hidden")
+                    s3.style.setProperty("visibility","visible")
+                    pr1.style.setProperty("background-color","crimson")
+                    pr3.style.setProperty("background-color","salmon")
+                    pr2.style.setProperty("background-color","crimson")
+                    s1.style.setProperty("height","0")
+                    s1.style.setProperty("width","0")
+                    s2.style.setProperty("height","0")
+                    s2.style.setProperty("width","0")
+
+                    s3.style.setProperty("width","954.72px")
+                    s3.style.setProperty("height","270px")
+console.log("wz")
+                 break;
+            }
+            
+        }
+    </script>
+
+
+        </section>
+        
+    </main>
+    </section>
+    <footer>Autor strony: <i><b>Adam Pawłowski</b></i> </footer>
+</body>
+</html>

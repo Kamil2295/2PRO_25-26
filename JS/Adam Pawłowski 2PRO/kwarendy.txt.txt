@@ -1,0 +1,4 @@
+1. SELECT imie, kolor,cena from klienci WHERE topKlient = 1
+2. SELECT imie,cena from klienci WHERE termin LIKE "2024-05-23 %";
+3. SELECT klienci.imie,klienci.kolor,ksztalty.ksztalt FROM klienci join ksztalty on klienci.ksztalty_id=ksztalty.id where ksztalty.ksztalt = "migdał"
+4. ALTER TABLE `wzory` ADD `doplata` INT NOT NULL AFTER `wzor`;

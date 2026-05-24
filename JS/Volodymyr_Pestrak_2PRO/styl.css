@@ -1,0 +1,58 @@
+*{
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+body{
+    background-color: BlanchedAlmond;
+    text-align: center;
+}
+aside{
+    width: 20%;
+    float: left;
+}
+aside>img{
+    width: 100%;
+}
+main{
+    width: 80%;
+    float: right;
+}
+nav{
+    text-align: left;
+    margin-left: 10%;
+}
+
+#section1, #section2, #section3{
+    background-color: salmon;
+    margin-left: 10%;
+    padding: 10px;
+    height: 250px;
+}
+button{
+    width: 26%;
+    color: white;
+    border: none;
+    font-size: 200%;
+    background-color: crimson;
+}
+#kolor{
+    background-color: salmon;
+}
+
+#section1{
+    display: block;
+}
+#section2{
+    display: none;
+}
+#section3{
+    display: none;
+}
+.wzory{
+    width: 70px;
+    margin: 5px;
+    border-radius: 100%;
+}
+footer{
+    clear: both;
+}

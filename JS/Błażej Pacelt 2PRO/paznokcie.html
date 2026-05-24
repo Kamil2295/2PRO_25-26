@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylizacja paznokci</title>
+
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+    <aside>
+        <img src="manicure.jpg" alt="Stylizacja paznokci">
+    </aside>
+
+    <main>
+        <header>
+            <h1>Twoje wymarzone paznokcie</h1>
+        </header>
+        <nav>
+            <button onmouseover="skrypt2(1)" id="b1">Kolor</button>
+            <button onmouseover="skrypt2(2)" id="b2">Kształt</button>
+            <button onmouseover="skrypt2(3)" id="b3">Wzór</button>
+        </nav>
+        <section id="s1">
+            <h2>Kolor</h2>
+            <img src="kolory.png" alt="Kolory paznokci"><br>
+            <input type="color" name="kolor" id="kolor" value="#FF0000">
+        </section>
+        <section id="s2">
+            <h2>Kształt</h2>
+            <img src="ksztalt.png" alt="Kształty paznokci"><br>
+            <select name="ksztalt" id="ksztalt">
+                <option value="migdal">Migdał</option>
+                <option value="zaokraglony">Zaokrąglony</option>
+                <option value="kwadratowy">Kwadratowy</option>
+                <option value="balerina">Balerina</option>
+                <option value="zaokraglony kwadrat">Zaokrąglony kwadrat</option>
+            </select>
+
+        </section>
+        <section id="s3">
+            <h2>Wzór</h2>
+            <div id="wzory"></div>
+            <input type="number" name="numer" id="numer" min="1" max="10">
+
+        </section>
+    </main>
+
+    <footer>
+        <b style="font-style: italic;">Autor strony: 00000000000</b>
+    </footer>
+
+    <script>
+        wzory = document.getElementById("wzory")
+        function skrypt1() {
+            for(i = 1; i<=10; i++) {
+                const img = document.createElement("img")
+                img.setAttribute("src", i+".jpg")
+                img.setAttribute("class", "wzory")
+                wzory.appendChild(img)
+            }
+        }
+        skrypt1()
+
+        function skrypt2(przycisk) {
+            b1 = document.getElementById("b1")
+            b2 = document.getElementById("b2")
+            b3 = document.getElementById("b3")
+            s1 = document.getElementById("s1")
+            s2 = document.getElementById("s2")
+            s3 = document.getElementById("s3")
+
+            if (przycisk == 1) {
+                b1.setAttribute("style", "background-color: Salmon")
+                b2.setAttribute("style", "background-color: Crimson")
+                b3.setAttribute("style", "background-color: Crimson")
+
+                s1.setAttribute("style", "display: block")
+                s2.setAttribute("style", "display: none")
+                s3.setAttribute("style", "display: none")
+            } else if (przycisk == 2) {
+                b1.setAttribute("style", "background-color: Crimson")
+                b2.setAttribute("style", "background-color: Salmon")
+                b3.setAttribute("style", "background-color: Crimson")
+
+                s1.setAttribute("style", "display: none")
+                s2.setAttribute("style", "display: block")
+                s3.setAttribute("style", "display: none")
+            } else {
+                b1.setAttribute("style", "background-color: Crimson")
+                b2.setAttribute("style", "background-color: Crimson")
+                b3.setAttribute("style", "background-color: Salmon")
+
+                s1.setAttribute("style", "display: none")
+                s2.setAttribute("style", "display: none")
+                s3.setAttribute("style", "display: block")
+            }
+        }
+    </script>
+
+</body>
+</html>

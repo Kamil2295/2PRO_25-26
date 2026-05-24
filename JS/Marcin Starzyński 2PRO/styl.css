@@ -1,0 +1,45 @@
+*{
+    font-family: 'Trebuchet MS';
+}
+body{
+    background-color: blanchedalmond;
+    text-align: center;
+}
+#bok{
+    width: 20%;;
+    float:left;
+}
+#bok img{
+width: 100%;
+}
+#glowny{
+    width: 80%;
+}
+nav{
+    text-align: center;
+    margin-left: 10px ;
+}
+section{
+    background-color: salmon;
+    margin-left:10% ;
+    padding: 10px;
+    height: 250px;
+}
+#sek2, #sek3{
+display: none;
+}
+button{
+    width: 26%;
+    color: white;
+    border: none;
+    font-size: 200%;
+    background-color: crimson;
+}
+#btn1{
+background-color: salmon;
+}
+.wzory{
+width: 70%;
+margin: 5px;
+border-radius: 100%;
+}

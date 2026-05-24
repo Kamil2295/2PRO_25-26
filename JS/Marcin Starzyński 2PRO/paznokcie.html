@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styl.css">
+    <title>Stylizacja paznokci</title>
+    <script src="app.js"></script>
+</head>
+<body>
+    <aside id="bok">
+        <img src="manicure.jpg" alt="Stylizacja paznokci">
+    </aside>
+
+    <main id="glowny">
+        <header>
+            <h1>Twoje wymarzone paznokcie</h1>
+        </header>
+
+        <nav>
+            <button id="btn1" onmouseover="kol()">Kolor </button>
+            <button id="btn2" onmouseover="kszt()">Kształt </button>
+            <button id="btn3" onmouseover="wzor()">Wzór </button>
+        </nav>
+
+        <section id="sek1">
+            <h2>Kolor </h2>
+            <img src="kolory.png" alt="Kolory paznokci"> <br>
+            <input type="color" value="#FF0000">
+        </section>
+        <section id="sek2">
+            <h2>Kształt</h2>
+            <img src="ksztalt.png" alt="Kształty paznokci">
+
+        </section>
+        <section id="sek3">
+            <h2>Wzór</h2>
+            <input type="number" min="1" max="10">
+        </section>
+        <footer>
+            <p>Autor strony: <i>Marcin Starzyński</i></p>
+        </footer>
+    </main>
+</body>
+</html>
